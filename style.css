@@ -56,6 +56,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: sticky;
+  z-index: 1;
   background: var(--primary-color);
   & nav > ul {
     display: flex;
