@@ -57,6 +57,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: sticky;
+  z-index: 1;
   background: var(--primary-color);
   & nav > ul {
     display: flex;
@@ -230,4 +231,69 @@ main {
   bottom: 30px;
   right: 30px;
   position: absolute;
+}
+
+/* footer */
+footer {
+  & > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    padding: 40px 100px;
+
+    & p {
+      font-size: var(--text-xl);
+      font-weight: var(--font-semibold);
+    }
+    & button {
+      align-self: center;
+      border: 3px solid black;
+      background: var(--white);
+      padding: 10px 30px;
+      font-size: var(--text-lg);
+      font-weight: var(--font-bold);
+      border-radius: 100px;
+    }
+  }
+
+  & > div:nth-of-type(2) {
+    padding: 30px;
+    display: grid;
+
+    grid-template-columns: repeat(4, 250px);
+    justify-content: space-around;
+    & > div > h3 {
+      font-weight: var(--font-semibold);
+      font-size: var(--text-lg);
+    }
+    & ul > li {
+      font-size: var(--text-sm);
+    }
+  }
+
+  & hr {
+    border: 2px solid black;
+    width: 95%;
+    margin: auto;
+  }
+
+  & > div:nth-of-type(3) {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & > p {
+          font-size: var(--text-sm);
+        }
+      }
+      align-self: center;
+      display: flex;
+      gap: 20px;
+    }
+  }
 }
