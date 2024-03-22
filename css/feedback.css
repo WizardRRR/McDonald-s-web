@@ -1,0 +1,88 @@
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-color);
+  padding: 30px 100px;
+
+  & > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-bold);
+      color: var(--white);
+    }
+
+    & > div {
+      padding: 10px;
+      background: var(--secondary-color);
+      & input {
+        border-radius: 99px;
+        padding: 2px 10px;
+        width: 100%;
+        background: #ebb300;
+        color: var(--white);
+        &::placeholder {
+          font-weight: var(--font-bold);
+          color: #ba951c;
+        }
+      }
+    }
+  }
+  & > p {
+    color: var(--white);
+  }
+  & > p:nth-of-type(1) {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  & > p:nth-of-type(2) {
+    margin-left: 15px;
+    font-weight: var(--font-bold);
+  }
+
+  & > div:nth-of-type(2) {
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  & > div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-weight: var(--font-bold);
+
+    & > div {
+      display: flex;
+      gap: 10px;
+      & > button {
+        display: grid;
+        place-items: center;
+        font-weight: inherit;
+        color: var(--white);
+        width: 30px;
+        height: 30px;
+      }
+      & > button:nth-of-type(4) {
+        background: rgb(0, 0, 0);
+      }
+    }
+
+    & > button {
+      padding: 5px 30px;
+    }
+    & > button:nth-of-type(1) {
+      background: var(--white);
+    }
+    & > button:nth-of-type(2) {
+      background: rgb(0, 0, 0);
+      color: var(--white);
+    }
+  }
+}
